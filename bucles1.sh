@@ -1,13 +1,16 @@
 #!/bin/bash
 read -p "Escribe un numero " numero1;
-numero=$(shuf -i 1-5 -n 1)
-while [ "$numero" -ne "$numero1" ]
+numero=$(shuf -i 1-100 -n 1)
+intento=1
+while [[ "$numero" -ne "$numero1" ]]
     do
-read -p "Escribe un numero " numero1
-if [ "$numero1" -lt "$numero" ]; then 
+if [[ "$numero1" -ge "$numero" ]]; then 
 echo "Menor"
-else [ "$numero1" -ge "$nimero" ]; then
+elif [[ "$numero1" -lt "$numero" ]]; then 
 echo "Mayor"
-echo "Perfecto"
-echo $numero
-
+fi
+read -p "Escribe un numero " numero1
+let "intento+=1" 
+done
+echo "El numero es $numero"
+echo "Numero de intentos $intento"
