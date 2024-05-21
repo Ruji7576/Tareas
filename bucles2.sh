@@ -16,8 +16,8 @@ echo "$fil"
 #3
     read -p "¿Si desea borrar un archivo? " yesNot
     if [[ "si" = "$yesNot" ]]; then
-        wictory=0
-        while [[ $wictory = 0 ]]; do
+        numero_terminado=0
+        while [[ $numero_terminado = 0 ]]; do
             read -p "Nombre del archivo: " nombreDelFitchero
             read -p "Formato del archivo: " formatoDelFitchero
             nombreConFormato="${nombreDelFitchero}.${formatoDelFitchero}"
@@ -25,7 +25,7 @@ echo "$fil"
             if [[ "./$nombreConFormato" = "$nombreConFormatoFind" ]]; then
                 rm "$nombreConFormato"
                 echo "Archivo borrado"
-                let "wictory+=1"
+                let "numero_terminado+=1"
                 else
                 echo "Archivo no encontrado"
             fi
