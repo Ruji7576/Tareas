@@ -1,12 +1,7 @@
 #!/bin/bash
-if [ "$#" -ne 3 ]; then
-    echo "Uso: $0 <parametro1> <parametro2> <parametro3>"
-    exit 1
-fi
-parametro1="$1"
-parametro2="$2"
-parametro3="$3"
+read -p "Numero" param1
+read -p "Numero1" param2
+read -p "Numero2" param3
 
-echo "El primer parámetro es: $parametro1"
-echo "El tercer parámetro es: $parametro3"
-
+echo "Parámetro en la posición 1: $param1"
+echo "Parámetro en la posición 3: $param3"
