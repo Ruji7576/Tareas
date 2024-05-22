@@ -17,13 +17,13 @@ Individual, se debe realizar el envío a más tardar el día 21/05/24
 
 # ----------Trabajo----------
 
-### Variables - ejercicio 1
+## Variables - ejercicio 1
 Este código en Bash tiene tres variables que luego se llenan con texto y después se escriben los valores: miNombreEs, tengo, vivo entre el texto.
 
-### Variables - ejercicio 2
+## Variables - ejercicio 2
 El código solicita al usuario que ingrese su actividad favorita y su comida favorita con el comando `read -p` (el prompt es el texto completo de `-p`), lo que se traduce como una pista para la máquina para que pueda tener el valor para la variable como actividad y comida. Después de esto, se hace lo mismo que en el ejercicio anterior.
 
-### Parámetros - ejercicio 1
+## Parámetros - ejercicio 1
 El código recibe tres parámetros del usuario e imprime los valores de los parámetros que están en las posiciones 1 y 3, respectivamente, utilizando `echo`.
 
 ## Parámetros - ejercicio 2
